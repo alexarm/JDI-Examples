@@ -1,4 +1,4 @@
-package org.mytests.uiobjects.example.pages;
+package org.mytests.uiobjects.example.forms;
 
 import com.epam.jdi.uitests.web.selenium.elements.common.Button;
 import com.epam.jdi.uitests.web.selenium.elements.common.TextField;
@@ -11,7 +11,7 @@ import org.openqa.selenium.support.FindBy;
  */
 public class LoginForm extends Form<User> {
     @FindBy(id="Login")
-    public TextField name;
+    public TextField login;
     @FindBy(id="Password")
     public TextField password;
 

@@ -15,6 +15,7 @@
         <allure.version>1.4.23</allure.version>
         <aspectj.version>1.8.5</aspectj.version>
         <driver>chrome</driver>
+        <suiteFileXML>src/test/resources/general.xml</suiteFileXML>
     </properties>
 
     <dependencies>
@@ -22,7 +23,7 @@
         <dependency>
             <groupId>com.epam.jdi</groupId>
             <artifactId>jdi-uitest-web</artifactId>
-            <version>${jdi.version}</version>
+            <version>LATEST</version>
         </dependency>
 
         <!--Allure-->
@@ -50,7 +51,7 @@
                 <version>2.19.1</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/general.xml</suiteXmlFile>
+                        <suiteXmlFile>${suiteFileXML}</suiteXmlFile>
                     </suiteXmlFiles>
                     <testFailureIgnore>true</testFailureIgnore>
                     <argLine>
