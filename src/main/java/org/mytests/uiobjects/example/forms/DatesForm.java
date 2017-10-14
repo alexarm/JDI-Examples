@@ -11,7 +11,6 @@ import com.epam.jdi.uitests.web.selenium.elements.pageobjects.annotations.JFindB
 import com.epam.web.matcher.testng.Assert;
 import org.mytests.uiobjects.example.entities.User;
 import org.mytests.uiobjects.example.util.CalculateMethods;
-import ru.yandex.qatools.allure.annotations.Step;
 
 public class DatesForm extends Form<User> {
 

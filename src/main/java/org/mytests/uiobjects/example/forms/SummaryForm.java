@@ -31,7 +31,7 @@ public class SummaryForm extends Form<User> {
     }
 
     public void checkSelected(Odd value) {
-        Assert.assertEquals(oddRadioButtons.getSelectedIndex(), value.ordinal()+1);
+        Assert.assertEquals(oddRadioButtons.getSelectedIndex(), value.ordinal() + 1);
     }
 
     public void selectEven(Even value) {
@@ -39,7 +39,7 @@ public class SummaryForm extends Form<User> {
     }
 
     public void checkSelected(Even value) {
-        Assert.assertEquals(evenRadioButtons.getSelectedIndex(), value.ordinal()+1);
+        Assert.assertEquals(evenRadioButtons.getSelectedIndex(), value.ordinal() + 1);
     }
 
 }

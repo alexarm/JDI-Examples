@@ -10,10 +10,10 @@ import org.testng.annotations.*;
 
 import static org.mytests.uiobjects.example.JDIExampleSite.*;
 
-public class ContactPageTests extends InitTests{
+public class ContactPageTests extends InitTests {
 
     @Test(dataProvider = "users", dataProviderClass = UserProvider.class, groups = "smoke")
-    public void testContactFormCorrectFill(User user){
+    public void testContactFormCorrectFill(User user) {
         contactPage.open();
         contactPage.checkOpened();
 

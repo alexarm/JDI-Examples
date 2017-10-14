@@ -23,7 +23,7 @@ public class InitTests extends TestNGBase {
     }
 
     @AfterClass(alwaysRun = true)
-    public void tearDown(){
+    public void tearDown() {
         WebSettings.getDriverFactory().close();
     }
 }

@@ -5,13 +5,13 @@ import com.epam.jdi.uitests.web.selenium.elements.common.Text;
 import com.epam.jdi.uitests.web.selenium.elements.composite.WebPage;
 import com.epam.jdi.uitests.web.selenium.elements.pageobjects.annotations.JFindBy;
 import com.epam.web.matcher.testng.Assert;
-import org.mytests.uiobjects.example.enums.TextsAbove;
 import org.mytests.uiobjects.example.enums.TextsUnderPictures;
 import ru.yandex.qatools.allure.annotations.Step;
 
 import java.util.List;
 
-import static org.mytests.uiobjects.example.enums.TextsAbove.*;
+import static org.mytests.uiobjects.example.enums.TextsAbove.MAIN_TITLE;
+import static org.mytests.uiobjects.example.enums.TextsAbove.MAIN_TXT;
 
 public class IndexPage extends WebPage {
 
@@ -31,21 +31,21 @@ public class IndexPage extends WebPage {
     public Text mainText;
 
     @Step
-    public void checkPictures(){
-        for (Image img: icons){
+    public void checkPictures() {
+        for (Image img : icons) {
             Assert.assertTrue(img.isDisplayed());
         }
     }
 
     @Step
-    public void checkTextsAbove(){
+    public void checkTextsAbove() {
         Assert.assertEquals(mainText.getText(), MAIN_TXT.text.toUpperCase());
         Assert.assertEquals(mainTitle.getText(), MAIN_TITLE.text.toUpperCase());
     }
 
     @Step
-    public void checkTextsUnderPictures(){
-        for (Text textUnderIcon: textsUnderIcons){
+    public void checkTextsUnderPictures() {
+        for (Text textUnderIcon : textsUnderIcons) {
             Assert.assertTrue(TextsUnderPictures.getTexts().contains(textUnderIcon.getText()));
         }
     }
@@ -55,7 +55,7 @@ public class IndexPage extends WebPage {
         Assert.isTrue(epamLogo.isDisplayed());
     }
 
-    public void checkInterface(){
+    public void checkInterface() {
         this.checkPictures();
         this.checkTextsUnderPictures();
         this.checkTextsAbove();

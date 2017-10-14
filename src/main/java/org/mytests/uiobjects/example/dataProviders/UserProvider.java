@@ -9,10 +9,10 @@ public final class UserProvider {
 
     @DataProvider(name = "users")
     public static Object[][] users() {
-        return new Object[][] {
-                { new User() },
-                { new User("Harry", "Potter", "Vingardium leviossa") },
-                { new User("","","")},
+        return new Object[][]{
+                {new User()},
+                {new User("Harry", "Potter", "Vingardium leviossa")},
+                {new User("", "", "")},
         };
     }
 }

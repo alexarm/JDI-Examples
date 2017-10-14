@@ -10,11 +10,11 @@ import org.openqa.selenium.support.FindBy;
  * Created by Roman_Iovlev on 10/22/2015.
  */
 public class LoginForm extends Form<User> {
-    @FindBy(id="Login")
+    @FindBy(id = "Login")
     public TextField login;
-    @FindBy(id="Password")
+    @FindBy(id = "Password")
     public TextField password;
 
-    @FindBy(css="[type=submit]")
+    @FindBy(css = "[type=submit]")
     public Button enter;
 }

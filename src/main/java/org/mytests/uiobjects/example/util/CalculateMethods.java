@@ -9,17 +9,17 @@ import java.util.Date;
 import java.util.TimeZone;
 
 public class CalculateMethods {
-    public static double getStep(Element element){
+    public static double getStep(Element element) {
         double step = element.getWebElement().getSize().width / 100.0;
         return step;
     }
 
-    public static int getCurrentPosition(Label sliderHandle){
+    public static int getCurrentPosition(Label sliderHandle) {
         return Integer.parseInt(sliderHandle.getText());
     }
 
-    public static int getOffset(int position, Element sliderTrack, Label sliderHandle){
-        int offset = (int)Math.round((position - getCurrentPosition(sliderHandle)) * getStep(sliderTrack));
+    public static int getOffset(int position, Element sliderTrack, Label sliderHandle) {
+        int offset = (int) Math.round((position - getCurrentPosition(sliderHandle)) * getStep(sliderTrack));
         return offset - 2;
     }
 
@@ -35,8 +35,7 @@ public class CalculateMethods {
         calendar.set(Calendar.MILLISECOND, 0);
         int unroundedMinutes = calendar.get(Calendar.MINUTE);
         int mod = unroundedMinutes % 15;
-        calendar.add(Calendar.MINUTE, mod < 1 ? -mod : (15-mod));
-        //calendar.add(Calendar.MINUTE, 15-mod);
+        calendar.add(Calendar.MINUTE, mod < 1 ? -mod : (15 - mod));
 
         String defaultTime = dateFormat.format(calendar.getTime()).toString();
 

@@ -16,10 +16,10 @@ public enum ServiceMenu {
         this.page = page;
     }
 
-    public static ArrayList<String> getMenuNames(){
+    public static ArrayList<String> getMenuNames() {
         ArrayList<String> names = new ArrayList<String>();
 
-        for (int i = 0; i < ServiceMenu.values().length; i++){
+        for (int i = 0; i < ServiceMenu.values().length; i++) {
             names.add(ServiceMenu.values()[i].page);
         }
 

@@ -22,7 +22,7 @@ public class LeftMenu extends Section {
     public Menu leftMenu = new Menu(By.cssSelector(".sidebar-menu"));
 
     @Step
-    public void checkServiceMenu(){
+    public void checkServiceMenu() {
         serviceMenu.expand();
         List<String> options = serviceMenu.getOptions();
         List<String> menuNames = ServiceMenu.getMenuNames();

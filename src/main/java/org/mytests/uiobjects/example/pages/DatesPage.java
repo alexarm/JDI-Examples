@@ -7,7 +7,7 @@ import org.mytests.uiobjects.example.forms.DatesForm;
 import org.mytests.uiobjects.example.sections.RightSection;
 import org.mytests.uiobjects.example.util.CalculateMethods;
 
-public class DatesPage extends WebPage{
+public class DatesPage extends WebPage {
 
     public RightSection rightSection;
     public DatesForm form;
@@ -35,8 +35,4 @@ public class DatesPage extends WebPage{
         Assert.assertEquals(form.rightValue.getText(), user.rightValue);
     }
 
-    public void checkSliders(int leftValue, int rightValue) {
-        Assert.assertEquals(form.leftSlider.getText(), leftValue);
-        Assert.assertEquals(form.rightSlider.getText(), rightValue);
-    }
 }

@@ -7,7 +7,7 @@ public final class RangeProvider {
     }
 
     @DataProvider(name = "ranges")
-    public static Object[][] ranges(){
+    public static Object[][] ranges() {
         return new Object[][]{
                 {0, 0},
                 {0, 100},

@@ -9,7 +9,7 @@ import org.mytests.uiobjects.example.enums.Buttons;
 import org.mytests.uiobjects.example.enums.CheckBoxes;
 import org.mytests.uiobjects.example.enums.Metals;
 
-public class RightSection extends Section{
+public class RightSection extends Section {
 
     public ResultsSection resultsSection;
 
@@ -63,7 +63,7 @@ public class RightSection extends Section{
     }
 
     public void checkButtonClickIsInLogs(Buttons button) {
-        Assert.assertContains(logs.getValue(), button.logText +":button clicked");
+        Assert.assertContains(logs.getValue(), button.logText + ":button clicked");
     }
 
 }

@@ -42,6 +42,6 @@ public class DatesPageTests extends InitTests {
         datesPage.checkOpened();
 
         datesPage.form.setSliders(leftValue, rightValue);
-        datesPage.form.checkRange(leftValue,rightValue);
+        datesPage.form.checkRange(leftValue, rightValue);
     }
 }

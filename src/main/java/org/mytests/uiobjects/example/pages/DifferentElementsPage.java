@@ -15,7 +15,7 @@ import org.mytests.uiobjects.example.sections.RightSection;
 import org.openqa.selenium.By;
 
 @JPage(url = "/page8.htm", title = "Different Element")
-public class DifferentElementsPage extends WebPage{
+public class DifferentElementsPage extends WebPage {
 
     public RightSection rightSection;
 
@@ -34,16 +34,16 @@ public class DifferentElementsPage extends WebPage{
     public Button defaultButton;
 
     public void selectCheckBox(CheckBoxes checkBox) {
-        checkBoxes.select(checkBox.ordinal()+1);
+        checkBoxes.select(checkBox.ordinal() + 1);
     }
 
     public void selectRadio(Metals metal) {
-        metals.select(metal.ordinal()+1);
+        metals.select(metal.ordinal() + 1);
     }
 
     public void selectAllCheckBoxes() {
         for (CheckBoxes checkBox : CheckBoxes.values()) {
-            checkBoxes.select(checkBox.ordinal()+1);
+            checkBoxes.select(checkBox.ordinal() + 1);
         }
     }
 
@@ -53,7 +53,7 @@ public class DifferentElementsPage extends WebPage{
         }
     }
 
-    public void checkDropdownSelection(Colors color, Boolean bool){
+    public void checkDropdownSelection(Colors color, Boolean bool) {
         Assert.assertEquals(colorsDropdown.isSelected(color), bool);
     }
 
@@ -64,7 +64,5 @@ public class DifferentElementsPage extends WebPage{
     public void checkSelected(Metals metal, Boolean bool) {
         Assert.assertEquals(metals.getElementsFromTag().get(metal.ordinal()).isSelected(), bool);
     }
-
-
 
 }
